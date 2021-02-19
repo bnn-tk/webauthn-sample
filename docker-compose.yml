@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  web-server:
+    image: "nginx:1.19.7"
+    ports:
+      - "443:443"
+      - "80:80"
+  db:
+    image: "amazon/dynamodb-local:latest"
